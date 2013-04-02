@@ -31,9 +31,7 @@ file_2_update="/etc/network/interfaces"
 #distro=
 #OS=
 
-echo $tunnel_user
-echo $tunnel_pass
-echo $tunnel_id
-echo $tunnel_update_url
 
 external_ip=$(ip -f inet addr show  $external_if | grep inet | awk '{print $2}')
+
+## to be continued ...
