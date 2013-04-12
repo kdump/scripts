@@ -25,7 +25,7 @@ tunnel_int="he-ipv6"
 tunnel_update_url="https://${tunnel_user}:${tunnel_pass}@ipv4.tunnelbroker.net/nic/update?hostname=${tunnel_id}"
 
 ### get IPv4 address assigned to $ext_int
-local_ip=$(ip -f inet addr show $ext_int | grep -i inet | awk '{print $2}')
+local_ip=$(ip -f inet addr show $ext_int | awk '/inet/ {print $2}')
 
 ####  TO BE DONE #####
 ####   verify $local_ip is in right format
