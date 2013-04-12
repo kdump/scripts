@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#######  HE tunnel broker account info  ##########
+#######  HE tunnel broker account info  ##############
+#######  UPDATE THEM ACCORDING TO YOUR ACCOUNT  ######
 tunnel_user=user_name
 tunnel_pass=Password00
 tunnel_id=xxxxxx
