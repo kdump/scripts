@@ -36,7 +36,7 @@ local_ip=$(ip -f inet addr show $ext_int | awk '/inet/ {print $2}')
 
 if [ ! -z $local_ip ]
 then
-  echo "   updating HE ipv6 tunnel end point ..."
+  	echo "   updating HE ipv6 tunnel end point ..."
 	ip tunnel add $tunnel_int mode sit remote $remote_end_ip local $local_ip ttl 255
 	ip link set $tunnel_int up
 	ip addr add ${ipv6_addr}/${ipv6_prefix}  dev ${tunnel_int}
